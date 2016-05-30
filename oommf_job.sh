@@ -50,4 +50,4 @@ echo '}' >> plot.gpi
 chmod +x plot.gpi
 ./plot.gpi
 ffmpeg -framerate 6 -i hyst%04d.png -c:v libx264 -vf "fps=60,format=yuv420p" $3.mp4 #making a video
-rm *.png #cleaning up the images, can be removed
+rm *.png #cleaning up the images, can be removed but better not removed ;).
